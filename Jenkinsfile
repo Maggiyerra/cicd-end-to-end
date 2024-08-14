@@ -27,7 +27,7 @@ pipeline {
             }
         }
 
-        stage('Push the artifacts'){
+        /*stage('Push the artifacts'){
            steps{
                 script{
                     sh '''
@@ -36,8 +36,7 @@ pipeline {
                     '''
                 }
             }
-        }
-        
+        }*/        
         stage('Checkout K8S manifest SCM'){
             steps {
                 git credentialsId: 'f87a34a8-0e09-45e7-b9cf-6dc68feac670', 
